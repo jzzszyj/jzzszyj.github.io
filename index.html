@@ -77,6 +77,55 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hexo" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/10/24/hexo/" class="article-date">
+  <time class="dt-published" datetime="2021-10-24T15:37:29.000Z" itemprop="datePublished">2021-10-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/10/24/hexo/">Hexo学习笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a></p>
+<h2 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h2><h3 id="快速创建文件"><a href="#快速创建文件" class="headerlink" title="快速创建文件"></a>快速创建文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo new [layout] &lt;title&gt;</span></span><br><span class="line"><span class="comment"># 使用hexo指令创建新文件, 如果标题中含有空格，需要使用引号包裹</span></span><br><span class="line"><span class="comment"># 没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替</span></span><br><span class="line">hexo new <span class="string">&#x27;My first blog&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="在指定目录生成文件"><a href="#在指定目录生成文件" class="headerlink" title="在指定目录生成文件"></a>在指定目录生成文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 默认在 gulp 目录下生成 index 文件</span></span><br><span class="line">hexo new page <span class="string">&#x27;gulp&#x27;</span></span><br><span class="line"><span class="comment"># 用 -p 或者 --path 命令指定生成的文件名称，在 about 目录下生成 me 文件</span></span><br><span class="line">hexo new page --path about/me <span class="string">&quot;About me&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="md5→静态文件"><a href="#md5→静态文件" class="headerlink" title="md5→静态文件"></a>md5→静态文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 或者简写成：</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<h2 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 打开 http://localhost:4000/，可以查看博客效果</span></span><br><span class="line"><span class="comment"># 可以用 -p 或者 --port 指定端口</span></span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo publish [layout] &lt;filename&gt;</span></span><br><span class="line">hexo publish </span><br></pre></td></tr></table></figure>
+
+<h2 id="部署网站"><a href="#部署网站" class="headerlink" title="部署网站"></a>部署网站</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 也可以用下面的简写命令来发布</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://jzzszyj.github.io/2021/10/24/hexo/" data-id="ckv6726ux0000v1o903na76ma" data-title="Hexo学习笔记" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/10/23/hello-world/" class="article-date">
@@ -157,6 +206,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/10/24/hexo/">Hexo学习笔记</a>
+          </li>
         
           <li>
             <a href="/2021/10/23/hello-world/">Hello World</a>
